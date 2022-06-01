@@ -61,7 +61,7 @@ git clone https://github.com/Ozone-Labs/Candy-Machine-Responsive-UI.git
 
 #### 2. Define your environment variables (.env file)
 
-Rename the `.env.example` file at the root directory to `.env` and update the following variables in the `.env` file:
+update the following variables in the `.env` file:
 
 ```
 REACT_APP_CANDY_MACHINE_ID=candy_machine_publickey

@@ -712,7 +712,7 @@ const Home = (props: HomeProps) => {
             <DesContainer>
               <Snackbar
                 open={alertState.open}
-                autoHideDuration={101000}
+                autoHideDuration={1000}
                 onClose={() => setAlertState({ ...alertState, open: false })}
               >
                 <div className="alertdiv">
@@ -852,11 +852,6 @@ const Home = (props: HomeProps) => {
                   {" Bal:- " + (balance || 0).toLocaleString()} SOL
                 </p>
                 <br />
-                {wallet && isActive && solanaExplorerLink && (
-                  <SolExplorerLink href={solanaExplorerLink} target="_blank">
-                    View on Solscan
-                  </SolExplorerLink>
-                )}
               </NFT>
             </DesContainer>
           </MintContainer>

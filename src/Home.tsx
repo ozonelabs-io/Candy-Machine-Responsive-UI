@@ -23,6 +23,11 @@ import {
 } from "./candy-machine";
 import { ENGINE_METHOD_PKEY_METHS } from "constants";
 
+
+//cloned or forked from:- https://github.com/Ozone-Labs/Candy-Machine-Responsive-UI
+
+
+
 const cluster = process.env.REACT_APP_SOLANA_NETWORK!.toString();
 const decimals = process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS
   ? +process.env.REACT_APP_SPL_TOKEN_TO_MINT_DECIMALS!.toString()

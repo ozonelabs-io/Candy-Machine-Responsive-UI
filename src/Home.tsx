@@ -861,7 +861,7 @@ const Home = (props: HomeProps) => {
             </DesContainer>
           </MintContainer>
         )}
-        ;
+        
       </MainContainer>
     </main>
   );

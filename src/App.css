@@ -12,9 +12,9 @@ body{
 /*  background-color:var(--main-background-color);*/
 
   background: url("img/background.png");
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
     background-size: cover !important;
-
+  background-size: cover;
   font-family: 'Patrick Hand', cursive;
   font-size: 1.1em;
   color: #fff;

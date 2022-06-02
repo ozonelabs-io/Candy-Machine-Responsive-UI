@@ -730,7 +730,7 @@ const Home = (props: HomeProps) => {
         <Logo>
           <WalletContainer>
             <Menu>
-              {wallet && isActive && (
+              {wallet.connected && isActive && (
                 <div className="container">
                   <div className="progressbar-container">
                     <div

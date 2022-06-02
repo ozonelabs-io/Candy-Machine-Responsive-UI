@@ -900,9 +900,12 @@ const Home = (props: HomeProps) => {
                   )}
                 </MintButtonContainer>
                 <p>
-                  {wallet.connected && (wallet.publicKey || " ") + " "}||
+                  {wallet.connected && shortenAddress(wallet.publicKey + " ")}
+                  ||
                   {" Bal:- " + (balance || 0).toLocaleString()} SOL
                 </p>
+                
+                    
                 <br />
               </NFT>
             </DesContainer>

@@ -773,7 +773,6 @@ const Home = (props: HomeProps) => {
                       {whitelistTokenBalance > 1 ? "Tokens" : "Token"}.
                     </h3>
                   )}
-                <br />
                 <div>
                   <Price
                     label={

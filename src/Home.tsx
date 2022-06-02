@@ -721,7 +721,7 @@ const Home = (props: HomeProps) => {
               )}
             </Menu>
             <Wallet>
-              {wallet ? (
+              {wallet.connected ? (
                 <WalletAmount>
                   {(balance || 0).toLocaleString()} SOL
                   <ConnectButton />

@@ -17,7 +17,9 @@ body{
   font-size: 1.1em;
   color: #fff;
 }
-
+.wallet-adapter-button[disabled] {
+  background-color: #FA26A0 !important;
+}
 h2, p{
   color: var(--main-text-color);
 }

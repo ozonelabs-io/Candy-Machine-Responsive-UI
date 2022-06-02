@@ -692,7 +692,7 @@ const Home = (props: HomeProps) => {
     <main>
       <MainContainer>
         <WalletContainer>
-          {wallet
+          {wallet.connected
             ? "Wallet Connected successfully"
             : "Please connect your wallet"}
         </WalletContainer>

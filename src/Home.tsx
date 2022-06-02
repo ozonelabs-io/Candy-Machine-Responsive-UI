@@ -816,6 +816,7 @@ const Home = (props: HomeProps) => {
                     }
                   />
                 </div>
+                 <br />
                 {wallet &&
                   isActive &&
                   whitelistEnabled &&

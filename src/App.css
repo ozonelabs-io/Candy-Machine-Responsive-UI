@@ -10,10 +10,13 @@
 body{
   
 /*  background-color:var(--main-background-color);*/
-
+  margin: 0;
+    padding: 0;
   background: url("img/background.png");
   background-repeat: no-repeat;
   font-family: 'Patrick Hand', cursive;
+  background-size: cover;
+    height: 100vh;
   font-size: 1.1em;
   color: #fff;
 }

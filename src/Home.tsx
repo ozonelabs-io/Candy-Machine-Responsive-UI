@@ -14,10 +14,9 @@ import {useWallet} from "@solana/wallet-adapter-react";
 import {WalletMultiButton} from "@solana/wallet-adapter-react-ui";
 import {GatewayProvider} from '@civic/solana-gateway-react';
 import Countdown from "react-countdown";
-import {Snackbar, Paper, LinearProgress, Chip} from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
-import {AlertState, getAtaForMint, toDate} from './utils';
-import {MintButton} from './MintButton';
+import { Snackbar, Paper, Chip } from "@material-ui/core";
+import { AlertState, getAtaForMint, toDate } from "./utils";
+import { MintButton } from "./MintButton";
 import {
   awaitTransactionSignatureConfirmation,
   CANDY_MACHINE_PROGRAM,
@@ -212,35 +211,6 @@ const Price = styled(Chip)`
   font-weight: bold;
   font-size: 1.2em !important;
   font-family: "Patrick Hand", cursive !important;
-`;
-
-const Image = styled.img`
-  height: 400px;
-  width: auto;
-  border-radius: 7px;
-  box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.5);
-`;
-
-const BorderLinearProgress = styled(LinearProgress)`
-  margin: 20px;
-  height: 10px !important;
-  border-radius: 30px;
-  border: 2px solid white;
-  box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.5);
-  background-color: var(--main-text-color) !important;
-
-  > div.MuiLinearProgress-barColorPrimary {
-    background-color: var(--title-text-color) !important;
-  }
-
-  > div.MuiLinearProgress-bar1Determinate {
-    border-radius: 30px !important;
-    background-image: linear-gradient(
-      270deg,
-      rgba(255, 255, 255, 0.01),
-      rgba(255, 255, 255, 0.5)
-    );
-  }
 `;
 
 export interface HomeProps {
@@ -730,7 +700,7 @@ const Home = (props: HomeProps) => {
         <Logo>
           <WalletContainer>
             <Menu>
-              {wallet.connected && isActive && (
+              {wallet.connected && (
                 <div className="container">
                   <div className="progressbar-container">
                     <div
@@ -816,7 +786,7 @@ const Home = (props: HomeProps) => {
                     }
                   />
                 </div>
-                 <br />
+                <br />
                 {wallet &&
                   isActive &&
                   whitelistEnabled &&
@@ -904,8 +874,7 @@ const Home = (props: HomeProps) => {
                   ||
                   {" Bal:- " + (balance || 0).toLocaleString()} SOL
                 </p>
-                
-                    
+
                 <br />
               </NFT>
             </DesContainer>

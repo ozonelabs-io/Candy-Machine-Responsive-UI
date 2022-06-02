@@ -751,7 +751,7 @@ const Home = (props: HomeProps) => {
               )}
             </Menu>
             <Wallet>
-              {!wallet ? (
+              {wallet ? (
                 <WalletAmount>
                   {(balance || 0).toLocaleString()} SOL
                   <ConnectButton />
@@ -899,7 +899,7 @@ const Home = (props: HomeProps) => {
                   )}
                 </MintButtonContainer>
                 <p>
-                  {wallet && (wallet.publicKey || " ") + " "}||
+                  {wallet.connected && (wallet.publicKey || " ") + " "}||
                   {" Bal:- " + (balance || 0).toLocaleString()} SOL
                 </p>
                 <br />

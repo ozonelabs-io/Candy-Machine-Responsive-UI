@@ -107,7 +107,7 @@ const Wallet = styled.ul`
 const ConnectButton = styled(WalletMultiButton)`
   border-radius: 18px !important;
   padding: 6px 16px;
-  background-color: #ff214f;
+  background-color: #fa26a0;
   margin: 0 auto;
 `;
 
@@ -693,8 +693,8 @@ const Home = (props: HomeProps) => {
       <MainContainer>
         <WalletContainer>
           {wallet.connected
-            ? "Carteira conectada com sucesso"
-            : "Por favor, conecte sua carteira"}
+            ? "Wallet Connected successfully"
+            : "Please connect your wallet"}
         </WalletContainer>
         <br />
         <Logo>
@@ -714,7 +714,7 @@ const Home = (props: HomeProps) => {
                       <div className="progressbar-liquid"></div>
                     </div>
                     <span className="progress">
-                      TOTAL MINTED NFTs já Criados : {itemsRedeemed} / {itemsAvailable}
+                      TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
                     </span>
                   </div>
                 </div>
@@ -762,7 +762,7 @@ const Home = (props: HomeProps) => {
               </Snackbar>
               <NFT elevation={3}>
                 <h2>
-                  Total Minted NFTs Já Criados {itemsRedeemed} / {itemsAvailable}
+                  Total Minted {itemsRedeemed} / {itemsAvailable}
                 </h2>
                 {wallet &&
                   isActive &&
@@ -781,7 +781,7 @@ const Home = (props: HomeProps) => {
                           whitelistPrice +
                           " " +
                           priceLabel
-                        : "Mint Price Aprox 75BRL :" + price + " " + priceLabel
+                        : "Mint Price :" + price + " " + priceLabel
                     }
                   />
                 </div>

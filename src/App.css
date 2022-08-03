@@ -1,7 +1,7 @@
 /* Customize your main colors in :root variables */
 :root {
   --main-background-color: #343A50;
-  --card-background-color: rgba(0, 0, 0, 0.33);
+  --card-background-color: rgba(99, 104, 196, 0.203);
   --countdown-background-color: #433765;
   --main-text-color: #fff;
     --title-text-color: #ff214f;

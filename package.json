@@ -35,6 +35,9 @@
     "typescript": "^4.5.5",
     "web-vitals": "^1.0.1"
   },
+  "optionalDependencies": {
+    "@ledgerhq/hw-transport-node-hid": "5.13.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

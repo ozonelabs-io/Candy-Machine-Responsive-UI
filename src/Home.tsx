@@ -693,8 +693,8 @@ const Home = (props: HomeProps) => {
       <MainContainer>
         <WalletContainer>
           {wallet.connected
-            ? "Wallet Connected successfully"
-            : "Please connect your wallet"}
+            ? "Carteira conectada com sucesso"
+            : "Por favor, conecte sua carteira"}
         </WalletContainer>
         <br />
         <Logo>
@@ -714,7 +714,7 @@ const Home = (props: HomeProps) => {
                       <div className="progressbar-liquid"></div>
                     </div>
                     <span className="progress">
-                      TOTAL MINTED : {itemsRedeemed} / {itemsAvailable}
+                      TOTAL MINTED NFTs já Criados : {itemsRedeemed} / {itemsAvailable}
                     </span>
                   </div>
                 </div>
@@ -762,7 +762,7 @@ const Home = (props: HomeProps) => {
               </Snackbar>
               <NFT elevation={3}>
                 <h2>
-                  Total Minted {itemsRedeemed} / {itemsAvailable}
+                  Total Minted NFTs Já Criados {itemsRedeemed} / {itemsAvailable}
                 </h2>
                 {wallet &&
                   isActive &&
@@ -781,7 +781,7 @@ const Home = (props: HomeProps) => {
                           whitelistPrice +
                           " " +
                           priceLabel
-                        : "Mint Price :" + price + " " + priceLabel
+                        : "Mint Price Aprox 75BRL :" + price + " " + priceLabel
                     }
                   />
                 </div>

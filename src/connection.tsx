@@ -238,7 +238,7 @@ export const sendTransaction = async (
   if (!wallet.publicKey) throw new WalletNotConnectedError();
 
   let transaction: Transaction;
-  if (!Array.isArray(instructions)) {
+  if (instructions instanceof Transaction) {
     transaction = instructions;
   } else {
     transaction = new Transaction();
@@ -540,11 +540,8 @@ async function awaitTransactionSignatureConfirmation(
   });
 
   //@ts-ignore
-  try {
+  if (connection._signatureSubscriptions[subId])
     connection.removeSignatureListener(subId);
-  } catch (e) {
-    // ignore
-  }
   done = true;
   console.log('Returning status', status);
   return status;
@@ -552,3 +549,4 @@ async function awaitTransactionSignatureConfirmation(
 export function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+

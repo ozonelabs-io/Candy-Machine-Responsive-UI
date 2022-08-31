@@ -68,7 +68,7 @@ const Logo = styled.div`
   z-index:1;
 `;
 const WalletAmount = styled.div`
-  color: black;
+  color: Black;
   width: auto;
   padding: 5px 5px 5px 16px;
   min-width: 48px;
@@ -107,7 +107,7 @@ const Wallet = styled.ul`
 const ConnectButton = styled(WalletMultiButton)`
   border-radius: 18px !important;
   padding: 6px 16px;
-  background-color: #fa26a0;
+  background-color: #ff214f;
   margin: 0 auto;
 `;
 
@@ -211,6 +211,11 @@ const Price = styled(Chip)`
   font-weight: bold;
   font-size: 1.2em !important;
   font-family: "Patrick Hand", cursive !important;
+`;
+
+const Gif = styled.img`
+  width: 200px;
+  border-radius: 20px;
 `;
 
 export interface HomeProps {
@@ -773,6 +778,9 @@ const Home = (props: HomeProps) => {
                       {whitelistTokenBalance > 1 ? "Tokens" : "Token"}.
                     </h3>
                   )}
+                <div>
+                  <Gif src="/main.gif" alt="" />
+                </div>
                 <div>
                   <Price
                     label={

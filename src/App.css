@@ -1,10 +1,10 @@
 /* Customize your main colors in :root variables */
 :root {
   --main-background-color: #343A50;
-  --card-background-color: rgba(0, 0, 0, 0.9);
+  --card-background-color: rgba(24, 8, 247, 0.103);
   --countdown-background-color: #433765;
   --main-text-color: #fff;
-    --title-text-color: #FA26A0;
+    --title-text-color: #ff214f;
 }
 
 body{
@@ -21,7 +21,7 @@ body{
   color: #fff;
 }
 .wallet-adapter-button[disabled] {
-  background-color: #FA26A0 !important;
+  background-color: #ff214f !important;
 }
 h2, p{
   color: var(--main-text-color);
@@ -141,7 +141,7 @@ body {
   position: relative;
   width: 100%;
   height: 2em;
-  background: #ce8dff;
+  background: #ff214f;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -154,7 +154,7 @@ body {
   left: 0;
   top: 0px;
   height: 100%;
-  background-image: linear-gradient(to right, #fa26a0 10%, #0e93f1) !important;
+  background-image: linear-gradient(to right, #ff214f 10%, #0e93f1) !important;
   border-radius: 10px;
   z-index: 2;
 }
@@ -196,7 +196,7 @@ body {
   border-radius: 50px;
   justify-content: center;
   /* border: 10px solid red; */
-  /* border-image: linear-gradient(to right, #fa26a0 10%, #0e93f1) !important;
+  /* border-image: linear-gradient(to right, #ff214f 10%, #0e93f1) !important;
   border-image-slice: 1; */
 }
 
